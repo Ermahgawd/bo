@@ -7,7 +7,7 @@ public class PaddleTest {
     private Paddle paddle;
 
     //Regular move
-    void testData1(){
+    private void testData1(){
         paddle = new Paddle();
         paddle.setdx_test(1);
         paddle.setY(360);
@@ -15,14 +15,14 @@ public class PaddleTest {
     }
 
     // Left edge
-    void testData2(){
+    private void testData2(){
         paddle = new Paddle();
         paddle.setY(360);
         paddle.setX(0);
     }
 
     // Right edge
-    void testData3(){
+    private void testData3(){
         paddle = new Paddle();
         paddle.setY(360);
         paddle.setX(350);
