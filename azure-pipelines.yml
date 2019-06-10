@@ -18,12 +18,9 @@ jobs:
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.8'
       jdkArchitectureOption: 'x64'
-      publishJUnitResults: false
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
-      goals: 'package'
       publishJUnitResults: true 
-      testResultsFiles: '**/surefire-reports/TEST-*.xml' # Required when publishJUnitResults == True
       mavenVersionOption: 'Default' # Options: default, path
       checkStyleRunAnalysis: true # Optional
 
@@ -38,12 +35,9 @@ jobs:
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.8'
       jdkArchitectureOption: 'x64'
-      publishJUnitResults: false
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
-      goals: 'package'
       publishJUnitResults: true 
-      testResultsFiles: '**/surefire-reports/TEST-*.xml' # Required when publishJUnitResults == True
       mavenVersionOption: 'Default' # Options: default, path
       checkStyleRunAnalysis: true # Optional
 
@@ -58,11 +52,8 @@ jobs:
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.8'
       jdkArchitectureOption: 'x64'
-      publishJUnitResults: false
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
-      goals: 'package'
       publishJUnitResults: true 
-      testResultsFiles: '**/surefire-reports/TEST-*.xml' # Required when publishJUnitResults == True
       mavenVersionOption: 'Default' # Options: default, path
       checkStyleRunAnalysis: true # Optional
