@@ -13,7 +13,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Timer;
 import java.util.TimerTask;
-import javax.swing.JPanel;
+import javax.swing.JPanel
 
 public class Board extends JPanel implements Commonparams {
 
