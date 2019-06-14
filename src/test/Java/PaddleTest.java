@@ -32,7 +32,7 @@ public class PaddleTest {
     public void testMove() {
         testData1();
         paddle.move();
-        assertEquals(360, paddle.getY());
+        assertEquals(361, paddle.getY());
         assertEquals(126, paddle.getX());
 
         testData2();
