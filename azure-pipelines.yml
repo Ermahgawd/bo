@@ -21,6 +21,7 @@ jobs:
       publishJUnitResults: false
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
+    displayName: Build with maven
 
 - job: macOS
   pool:
@@ -38,6 +39,7 @@ jobs:
       publishJUnitResults: true 
       mavenVersionOption: 'Default' # Options: default, path
       checkStyleRunAnalysis: true # Optional
+    displayName: Build with maven
 
 - job: Windows
   pool:
@@ -55,3 +57,4 @@ jobs:
       publishJUnitResults: true 
       mavenVersionOption: 'Default' # Options: default, path
       checkStyleRunAnalysis: true # Optional
+    displayName: Build with maven
