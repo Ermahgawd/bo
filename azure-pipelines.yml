@@ -37,8 +37,7 @@ jobs:
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
       publishJUnitResults: true 
-      mavenVersionOption: 'Default' # Options: default, path
-      checkStyleRunAnalysis: true # Optional
+      mavenVersionOption: 'Default'
     displayName: Build with maven
 
 - job: Windows
@@ -55,6 +54,23 @@ jobs:
       testResultsFiles: '**/surefire-reports/TEST-*.xml'
       goals: 'package'
       publishJUnitResults: true 
-      mavenVersionOption: 'Default' # Options: default, path
-      checkStyleRunAnalysis: true # Optional
+      mavenVersionOption: 'Default'
     displayName: Build with maven
+
+- job: Style checks
+  pool:
+    vmImage: 'macOS-10.14'
+  steps:
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.8'
+        jdkArchitectureOption: 'x64'
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        goals: 'package'
+        publishJUnitResults: true
+        mavenVersionOption: 'Default'
+        checkStyleRunAnalysis: true
+      displayName: Check style
