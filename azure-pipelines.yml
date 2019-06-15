@@ -57,7 +57,7 @@ jobs:
       mavenVersionOption: 'Default'
     displayName: Build with maven
 
-- job: Style checks
+- job: StyleChecks
   pool:
     vmImage: 'macOS-10.14'
   steps:
