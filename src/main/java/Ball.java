@@ -20,15 +20,15 @@ public class Ball extends Sprite implements Commonparams {
 
     public void move() {
 
-        x += xdir;
+        this.setX(this.getX() + xdir);
         y += ydir;
-        this.spriteBoundary = new Rectangle(x, y, 6, 6);
+        this.spriteBoundary = new Rectangle(this.getX(), y, 6, 6);
 
-        if (x <= 3) {
+        if (this.getX() <= 3) {
             setXDir(1);
         }
 
-        if (x >= (WIDTH - 3)) {
+        if (this.getX() >= (WIDTH - 3)) {
             setXDir(-1);
         }
 

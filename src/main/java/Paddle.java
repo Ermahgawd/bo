@@ -19,15 +19,15 @@ public class Paddle extends Sprite implements Commonparams {
 
     public void move() {
 
-        x += dx;
-        this.spriteBoundary = new Rectangle(x, y, 50, 3);
+        this.setX(this.getX() + dx);
+        this.spriteBoundary = new Rectangle(this.getX(), y, 50, 3);
 
-        if (x <= 0) {
-            x = 0;
+        if (this.getX() <= 0) {
+            this.setX(0);
         }
 
-        if (x >= WIDTH - 50) {
-            x = WIDTH - 50;
+        if (this.getX() >= WIDTH - 50) {
+            this.setX(WIDTH - 50);
         }
     }
 
@@ -59,7 +59,7 @@ public class Paddle extends Sprite implements Commonparams {
 
     private void resetState() {
 
-        x = INIT_PADDLE_X;
+        this.setX(INIT_PADDLE_X);
         y = INIT_PADDLE_Y;
     }
 

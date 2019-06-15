@@ -9,7 +9,7 @@ public class Brick extends Sprite implements Commonparams{
 
     private void initBrick(int x, int y) {
 
-        this.x = x;
+        this.setX(x);
         this.y = y;
 
         destroyed = false;

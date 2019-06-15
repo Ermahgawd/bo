@@ -2,13 +2,13 @@ import java.awt.Rectangle;
 
 public class Sprite {
 
-    protected int x;
+    private int x;
     protected int y;
     protected int height;
     protected int width;
     protected Rectangle spriteBoundary;
 
-    public Sprite(int x, int y, int width, int height){
+    public Sprite(final int x, int y, int width, int height){
         this.x = x;
         this.y = y;
         this.height = height;
