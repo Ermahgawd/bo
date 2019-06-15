@@ -24,6 +24,9 @@
                 <version>3.1.0</version>
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
+                    <consoleOutput>true</consoleOutput>
+                    <failOnViolation>true</failOnViolation>
+                    <failsOnError>true</failsOnError>
                 </configuration>
             </plugin>
         </plugins>
